@@ -22,7 +22,7 @@ $(document).ready(function() {
 
                 data.stats.forEach(function(s) {
                     estadisticas.push({
-                        label: s.stats.name,
+                        label: s.stat.name,
                         y: s.base_stat,
                     });
                 })
@@ -44,8 +44,9 @@ $(document).ready(function() {
                         dataPoints: estadisticas
                         }
                     ],
-                }
-
+                };
+                let char = new  CanvasJS.Chart("pokeStats", config);
+                char.render();            
         },
     });
 
