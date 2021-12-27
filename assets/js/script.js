@@ -17,8 +17,33 @@ $(document).ready(function() {
                     <h6>Peso:${peso} </h6>
                 </div>
                 `);
+
+                let estadisticas = []
+
+                data.stats.forEach(function(s) {
+                    estadisticas.push({
+                        label: s.stats.name,
+                        y: s.base_stat,
+                    });
+                })
+                
                 let config = {
                     animationEnabled : true,
+                    title: {
+                        text : "Estadísticas"
+                    },
+                    axisY: {
+                        tittle: "valor"
+                    },
+                    axisX: {
+                        tittle: "Estadística"
+                    },
+                    data: [
+                        {
+                        type:"column",
+                        dataPoints: estadisticas
+                        }
+                    ],
                 }
 
         },
