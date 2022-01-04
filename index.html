@@ -1,65 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> <!--CDN bootstrap-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> <!--bundle bootstrap-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> <!--CDN Jquery-->
-    <script type="text/javascript" src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script> <!--CDN canvasJS-->
-    <link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet"/> <!--CDN Ness.css-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--CDN bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!--bundle bootstrap-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!--CDN Jquery-->
+    <script type="text/javascript" src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
+    <!--CDN canvasJS-->
+    <link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
+    <!--CDN Ness.css-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>Pokédex</title>
 </head>
 <header class="text-center pt-5">
-<h1><i class="nes-pokeball"></i>Pokédex</h1>
-<p class="lead">Practica de uso de API con Pokémon</p>
+    <h1><i class="nes-pokeball"></i>Pokédex</h1>
+    <p class="lead">Practica de uso de API con Pokémon</p>
 </header>
-<body>
-<section>
-    <form>
-        <div class="row w-50 m-auto nes-field">
-            <div class="col-12 col-sm-6">
-                <label>Ingresa el nombre o número del Pokémon:</label>
-            </div>
-            <div class="col-12 col-sm-6">
-                <input class="form-control nes-input" id="pokemonInput">
-            </div>
-        </div>
-        <button class="btn nes-btn is-primary mx-auto d-block my-3">Consultar</button>
-    </form>
-</section>
-<section>
-    <div class="row nes-container is-rounded" style="margin: 30px;">
-        <div class="col-12 col-sm-6" id="pokeinfo">
-        </div>
-        <div class="col-12 col-sm-6" id="pokeStats" style="height: 300px; width: 500px;">        
 
+<body>
+    <section>
+        <form>
+            <div class="row w-50 m-auto nes-field">
+                <div class="col-12 col-sm-6">
+                    <label>Ingresa el nombre o número del Pokémon:</label>
+                </div>
+                <div class="col-12 col-sm-6">
+                    <input class="form-control nes-input" id="pokemonInput">
+                </div>
+            </div>
+            <button class="btn nes-btn is-primary mx-auto d-block my-3">Consultar</button>
+        </form>
+    </section>
+    <section>
+        <div class="row nes-container is-rounded" style="margin: 30px;">
+            <div class="col-12 col-sm-6" id="pokeinfo">
+            </div>
+            <div class="col-12 col-sm-6" id="pokeStats" style="height: 300px; width: 500px;">
+
+            </div>
         </div>
-    </div>
-</section>
-<section class="icon-list text-center mx-auto pt-5">  
-    <footer>
-        <p>Realizado con el framework NES.css</p>
-    <!-- instagram -->
-    <i class="nes-icon instagram is-large"></i>
-  
-    <!-- github -->
-    <i class="nes-icon github is-large"></i>
-    
-    <!-- gmail -->
-    <i class="nes-icon gmail is-large"></i>
-    
-    <!-- linkedin -->
-    <i class="nes-icon linkedin is-large"></i>
-    </footer>
-  </section>
+    </section>
+    <section class="icon-list text-center mx-auto pt-5">
+        <footer>
+            <p>Realizado con el framework NES.css</p>
+            <!-- instagram -->
+            <a href="https://instagram.com/ariaqho" target="_blank"><i class="nes-icon instagram is-large"></i></a>
+
+            <!-- github -->
+            <a href="https://github.com/Ariaqho" target="_blank"><i class="nes-icon github is-large"></i></a>
+
+            <!-- gmail -->
+            <a href="mailto:felipe.arica@gmail.com" target="_blank"><i class="nes-icon gmail is-large"></i></a>
+
+            <!-- linkedin -->
+            <a href="https://www.linkedin.com/in/felipe-maldonado-n%C3%BA%C3%B1ez-54145917a/" target="_blank"><i
+                    class="nes-icon linkedin is-large"></i></a>
+        </footer>
+    </section>
 </body>
-    
-    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
-    <script src="assets/js/script.js"></script>
+
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+<script src="assets/js/script.js"></script>
 </body>
+
 </html>
