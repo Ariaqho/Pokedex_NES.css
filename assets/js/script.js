@@ -1,7 +1,7 @@
 $(document).ready(function() {
     $("form").submit(function(event){
         event.preventDefault()
-        let valueInput = $("#pokemonInput").val();
+        let valueInput = $("#pokemonInput").val().toLowerCase();
 
         $.ajax({
             url: "https://pokeapi.co/api/v2/pokemon/" + valueInput,
